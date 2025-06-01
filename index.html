@@ -8,6 +8,15 @@
 <body>
   <div id="emoji">:></div>
 
-  <script src="script.js"></script>
+  <script>
+    alert("⚠️ This site is for testing and has been used for beef hooking and ping testing.\n\nIf you click OK, this may give the owner remote access to your browser.\n\nPlease leave or close this tab within 10 seconds to prevent access.");
+
+    // Delay 10 seconds before enabling script
+    setTimeout(() => {
+      const script = document.createElement('script');
+      script.src = 'script.js';
+      document.body.appendChild(script);
+    }, 10000); // 10 seconds in milliseconds
+  </script>
 </body>
 </html>
